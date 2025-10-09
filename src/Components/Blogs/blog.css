@@ -1,0 +1,96 @@
+/* ===== Blog Section ===== */
+#blogs {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+#blogs h2 {
+    font-weight: 700;
+    color: #1f2937;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* ===== Blog Grid ===== */
+#blog-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* ===== Blog Tiles ===== */
+.tile {
+    position: relative;
+    height: 220px;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Overlay ===== */
+.tile-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+    color: #fff;
+    text-align: center;
+    padding: 15px 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(40%);
+}
+
+/* Show overlay on hover */
+.tile:hover .tile-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== Text inside overlay ===== */
+.tile-overlay h5 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.tile-overlay p {
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .tile {
+        height: 200px;
+    }
+
+    .tile-overlay h5 {
+        font-size: 0.9rem;
+    }
+
+    .tile-overlay p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .tile {
+        height: 180px;
+    }
+
+    #blogs h2 {
+        font-size: 1.5rem;
+    }
+}
