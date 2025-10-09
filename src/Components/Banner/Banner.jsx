@@ -1,5 +1,5 @@
 import React from 'react'
-import headshot from '../../../assets/images/profile_picture.jpg'
+import headshot from '../../assets/images/profile_picture.jpg'
 import './Banner.css'
 
 function Banner() {
