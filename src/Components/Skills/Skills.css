@@ -1,0 +1,72 @@
+/* Section container */
+.skills-section {
+    padding: 5rem 2rem;
+    background-color: #f3f2f1;
+} 
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #0d1b2a;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #00bcd4;
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
+
+
+/* Skill cards */
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    font-size: 1.50rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.col-6 {
+    flex: 0 0 48%;
+}
+
+@media (min-width: 768px) {
+        .col-md-4 {
+        flex: 0 0 31%;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-2 {
+        flex: 0 0 14%;
+    }
+}
+    .text-center {
+    text-align: center;
+} 
