@@ -1,0 +1,84 @@
+/* Overall header section */
+.Banner_outer_container {
+    padding: 4rem 1rem;
+    position: relative;
+    overflow: hidden;
+}
+header {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 4rem 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Profile image styling */
+header img {
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    border: 4px solid #00bcd4;
+    object-fit: cover;
+    box-shadow: 0 0 25px rgba(0, 188, 212, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1.5rem;
+}
+
+/* Hover effect on profile image */
+header img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 35px rgba(0, 188, 212, 0.5);
+}
+
+/* Name styling */
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.8px;
+}
+
+/* Subtitle (role + location) */
+header p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #555;
+}
+
+/* Optional subtle entrance animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header {
+    animation: fadeInUp 1s ease forwards;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header {
+        padding: 3rem 1rem;
+    }
+
+    header img {
+        width: 160px;
+        height: 160px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+}
